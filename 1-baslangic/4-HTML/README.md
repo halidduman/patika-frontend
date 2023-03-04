@@ -68,7 +68,7 @@ NOT: Başlıklar kod satırı parantezinin içinde olduğu için görünür duru
 * "."Class? (ne olduğu belirtilmedi)
 ```
 
-# Görsellerle Çalışmak
+# Görsellerle Çalışmak < img >
 
 internet üzerinden görsel eklemek için görselin linkini kopyalayın.
 -
@@ -91,3 +91,68 @@ internet üzerindeki görseli indirip kullanmak isterseniz.projenizin olduğu kl
 ````
 
 "< img >"satırından sonra bosluk bırakıp ekleyin.
+
+# Linklerle Çalışmak < a >
+
+- Baska bir web sitesine git
+- baska bir sayfaya git
+- ayni sayfa icinde bir yere
+- mail at
+- telefon et
+````
+<a href=""></a> (a+tab) veya <a></a>
+````
+komutunun içerisine tırnak (") işaretinin içerisine link ekleyebilirsiniz. 2. a komutuna gelmeden satır arasına yünlendirilecek kismi yazmaniz gerekecek.
+```
+<a href="" target="_blank"></a>
+```
+"Targer=_blank" etiketini eklersek bu sefer tikladigimiz link'i yeni sekmede acikactir.
+-
+
+----
+eger web sayfanizin icinde bir sayfa olusturmak isterseniz blasorunuze yeni bir html dosyasi olusturun. ornek: iletisim.html
+
+ve bu actiginiz dosyanın adını kodunuzun icina yaziniz.
+```
+<a href="iletisim.html">yeni sayfa</a>
+```
+ayni sekilde o olusturdugunuz sayfadan cikmak icinde 
+```
+<a href="index.html">ana sayfaya geri don</a>
+```
+"ana sayfaya geri don"diye kod ulusturabilirsiniz.
+--
+-----
+mesela biz sayfamizin en alt kismina gitmek istiyoruz 
+ozaman en alt kisima bir id olusturup isim vermem lazim
+şu şekilde < h2 > etiketine id ve <!İSİM!> verelim.
+```
+<h2 id=idismi></h2>
+```
+sonra bu İD gitmesi için 
+```
+<a href="#idismi"aciklamasi></a>
+```
+yazması yeterli
+
+<strong> önemli not:< a >  < /a  > komutunun icine "#" eklemezseniz İD'e gidemezsiniz
+-
+---
+mail atmak icin kod satirina "mailto:"ekleyin.
+```
+<a href="mailto:halidduman60@gmail.com">aciklama</a>
+```
+telefon et tusu icin kod satirina "tel:"ekleyin.
+```
+<a href="tel:5559997766">aciklama</a>
+```
+---
+görsele tiklayip link'e gitmek icin img kodunuzu < a ></ a > komutunun icine alin 
+```
+<a href="https://app.patika.dev/courses/html/linklerle-calismak">
+
+
+<img src="images/Ağaçlar.jpg" alt="ağaçlar resim">
+
+
+</a>
