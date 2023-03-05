@@ -158,3 +158,53 @@ görsele tiklayip link'e gitmek icin img kodunuzu < a ></ a > komutunun icine al
 
 
 </a>
+````
+# İskeletinin Genel Yapısını Anlamak
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+(!)isareti ile olusturabilirsiniz.
+
+- html lang=hangi dil olacagini
+- meta charset=hangi yazı karakteri ile yazılacagini.
+- title= baslik
+
+tarayici bu kod olmadan calismaz
+--
+head yazan kısım tarayıcıya ait alan body kısmı ise bizim calisma yapacagimiz alan.
+
+# kısaca etiketler 
+
+h1 - Başlık
+
+p - Paragraf
+
+i / em - Eğik / Vurgulu Yazı
+
+b / strong - Kalın / Koyu Yazı
+
+a - Link
+
+ul & li  - Sırasız liste ve liste elemanı
+
+blockquote - Alıntı
+
+hr - Yatay çizgi ekleme
+
+img - Görsel
+
+div - Bölme 
+
+emmet.io: https://emmet.io/
