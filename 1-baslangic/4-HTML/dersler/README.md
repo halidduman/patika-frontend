@@ -152,7 +152,9 @@ görsele tiklayip link'e gitmek icin img kodunuzu < a ></ a > komutunun icine al
 <a href="https://app.patika.dev/courses/html/linklerle-calismak">
 
 
-<img src="images/Ağaçlar.jpg" alt="ağaçlar resim">
+<img src="images/Trees
+.jpg" alt="Trees
+ resim">
 
 
 </a>
