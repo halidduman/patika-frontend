@@ -208,3 +208,9 @@ img - Görsel
 div - Bölme 
 
 emmet.io: https://emmet.io/
+
+---
+semantic.html
+--
+
+"< header >":sanal kutu
