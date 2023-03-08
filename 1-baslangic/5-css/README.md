@@ -57,3 +57,46 @@ bu kodu css dosyamiza yazdiktan sonra artik istedigimiz html dosyasinin icindeki
 ----
 Inline css komutları,Internal css onceliklidir
 -- 
+(eger bir kod satirini kullanmayacak ama kaldirmakta istemiyorsaniz) Ctrl+ö ye yani aciklama satirina ekleyebilirsiniz.
+# Açıklama Satırları ile Çalışmak ve Genel Font Özellikleri
+- text-transform: uppercase;butun harfleri buyuk yaz (h1) icin
+```
+h2 {
+    text-transform: uppercase; 
+}
+```
+
+- Arka planin rengini deistir.
+```
+body {
+    background-color: rgb(199, 199, 199);
+}
+```
+# miras sistemi
+NOT:  mesela bir < ul> etiketinin rengini deistirirsek ve < ul > etiketinin icinde < li > etiketleri varsa bu < li > etiketleride etkilenip renkleri degisecektir.
+--
+----
+
+# Genel Font Özellikleri
+
+    fontu indirmeden kullanmak icin:
+    index dosyasindaki < head > kısmını icine < link rel= href= > kısmına ekleyip,kısa linki css dosyamıza veya < body >kısmına < font-family > olarak ekliyoruz.
+# CSS ile Class ve ID Kullanımı
++ class
+    class: kullanmadan once css dosyanizi html dosyaniza tanimlayin ardindan css dosyaniza class etiketini tanimlamak icin basina "." koyun
+    -
+````
+.red {
+color: red;
+}
+````
+".red" yazan kisma istediginizi yazin ardinda bu satirin icine slass&sifif,ozellik eklemek icin "{}" taginin icine ozellik lekleyin ornek:color,text-size,text-family.gibi...   
+fazladan class eklemek icin sadece tirnak isaretinin icinde bosluk birakmaniz yeterli.
+
+        h1.text-color
+Dersek bu < h1 > etiketini direkt class li bir sekilde olusturmus olduk."."class anlamına gelir nokta koydugumuz icin class li olusturmus olduk
+--
+
+
++ ID
+
