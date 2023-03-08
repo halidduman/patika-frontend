@@ -1,0 +1,37 @@
+body {
+    /* background-color:#EDEDED; */
+    background-color: white;
+    font-family:stylesheet;
+    font-size: 50px;
+    text-align: center;
+    list-style-position: inside;
+    margin: auto;
+}
+h1 , h2 {
+    color:#DA0037;
+}
+p {
+    color: #444444;
+    font-family: 'Roboto', sans-serif;
+}
+li {
+    color:#171717;
+}
+a {
+    font-family:stylesheet;
+}
+.ortala {
+    text-align: center;
+    list-style-position: inside;
+}
+div {
+    width: 1000px;
+    height: 200px;
+    padding: px;
+    position: relative;
+    margin: auto;
+}
+
+.resim {
+    width: 20;height:400px;
+}
