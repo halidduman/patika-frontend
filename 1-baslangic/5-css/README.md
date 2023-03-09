@@ -111,6 +111,7 @@ Dersek bu < h1 > etiketini direkt class li bir sekilde olusturmus olduk."."class
 ornk:ul>li actik ilk class imizi ul satirina sonrasinda li komutunun icinde her hangi bir metni veya kelimeyi span icine aldigimiz zaman span komutuna ikinci class imizi girdigimiz zaman calisir
 
 ----
+
 ## first-chiled&last-chiled
 
 - first chiled:  
@@ -118,3 +119,73 @@ ornk:ul>li actik ilk class imizi ul satirina sonrasinda li komutunun icinde her 
 - last chiled
  
 last child de tam tersi en son listeye etki edecektir.
+
+---
+
+## CSS Kutu Özellikleri(Margin, Padding, Width, Height) Kullanımı
+
+* width : genislik
+
+* height : yukseklik
+
+* float : kutucuklarin dizilim sekli
+
+* padding : kutu icindeki metinleri konumlandirma
+
+* margin : olusturdugumuz kutucuklar arasinda bosluk olusturdurk
+
+### margin
+
+margin olusturuken sadece margin diye olusturursak belirlenen kutucugun her tarafindan (4 tarafi) arayi acar 
+````
+.class {
+    margin: 10px
+}
+````
+
+margin-top dersek yukarıdan. 
+
+````
+.class {
+    margin-top:10px ;
+}
+````
+margin-bottom dersek assagidan.
+`````
+.class {
+    margin-bottom: ;
+}
+`````
+margin-left dersek soldan
+`````
+.class {
+    margin-left: ;
+}
+`````
+mergen-right dersek sagdan
+`````
+.class {
+    margin-right: ;
+}
+`````
+----
+.container.kutuyu ortalama alternatifleri
+````
+.container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+````
+````
+.container {
+    width: 1000px;
+    margin:0 auto 0 auto;
+````
+````
+.container {
+    width: 1000px;
+    margin:0 auto;
+````
+0 olan yer "z"ekseni (yukarı) auto olan yer "y" ekseni (sag&sol)
+---
+bu ayar saat ekseni etrafinde donuyo gibi de dusunebiriliz

@@ -1,0 +1,61 @@
+/* body {
+    margin:0;
+    padding:0;
+} */
+.box {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    /* margin: 10px; */
+    margin-top:px;
+    margin-bottom: 10px;
+    /* margin-left: 10px; */
+    margin-right: 10px;
+    float: left;
+}
+
+.card {
+    width: 20%;
+    float: left;
+    padding: 5%;
+    margin-right: 3%;
+    border-radius:10px ;
+    background-color: rgb(200, 200, 200);
+}
+
+.container {
+    width: 1000px;
+    margin:50px auto 0
+}
+
+.left-bar{
+    width: 200px;
+    float: left;
+}
+
+.contant {
+    width: 800px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-yellow {
+    background-color: rgb(255, 230, 0);
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.class {
+    margin-left:10px ;
+}
+
