@@ -30,6 +30,11 @@ a {
   list-style-position: inside;
 }
 
+#conon {
+  text-align: center;
+  font-size: 200px;
+}
+
 div {
   width: 1000px;
   height: 200px;
