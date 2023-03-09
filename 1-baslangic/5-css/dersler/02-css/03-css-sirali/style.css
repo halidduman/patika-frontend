@@ -13,3 +13,7 @@ li:nth-child(3n + 1) {
   color: red;
 }
 /************************ 3 sayidan 1'ine etki eder  */
+
+a:hover {
+  background-color: rgb(204, 204, 255);
+}
