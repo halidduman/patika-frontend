@@ -98,7 +98,23 @@ fazladan class eklemek icin sadece tirnak isaretinin icinde bosluk birakmaniz ye
         h1.text-color
 Dersek bu < h1 > etiketini direkt class li bir sekilde olusturmus olduk."."class anlamına gelir nokta koydugumuz icin class li olusturmus olduk
 --
++ ID tek bir kod satirinin icinde olmali
+ 
+  ------
+## SS Seçiciler ile Çalışmak, İstediğimiz HTML Etiket Yapısına Özelliklik Ekleyebilmek
+````
+.class1. class2{
+    color:red
+    font-size:24px
+}
+`````
+ornk:ul>li actik ilk class imizi ul satirina sonrasinda li komutunun icinde her hangi bir metni veya kelimeyi span icine aldigimiz zaman span komutuna ikinci class imizi girdigimiz zaman calisir
 
+----
+## first-chiled&last-chiled
 
-+ ID
-
+- first chiled:  
+ biz bu kodu "ul>li*5" dersek olusan ilk "li" satirinda degisiklik yapar
+- last chiled
+ 
+last child de tam tersi en son listeye etki edecektir.

@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(229, 225, 211);
+}
 .red {
   color: red;
 }
@@ -17,3 +20,30 @@
 #gri {
   color: rgb(0, 242, 48);
 }
+.renk .boyut {
+  color: rgb(12, 0, 233);
+  font-weight: unset;
+}
+/* kod satırı ve icindeki kod satirina yazilir */
+/* ornk:ul>li actik ilk class imizi ul satirina sonrasinda li komutunun icinde her hangi bir metni veya kelimeyi span icine aldigimiz zaman span komutuna ikinci class imizi girdigimiz zaman calisir */
+
+ul > :first-child {
+  color: yellow;
+}
+/*   biz bu kodu "ul>li*5" dersek olusan ilk "li" satirinda degisiklik yapar  */
+
+ul > :last-child {
+  color: yellow;
+}
+
+/* biz bu kodu "ul>li*5" dersek olusan son "li" satirinda degisiklik yapar */
+ul > ::first-line {
+  color: yellow;
+}
+
+/* listedeki noktalara dokunmadan metnin rengini degistiri */
+
+li:nth-child(oddd) {
+  color: red;
+}
+/* nth-child (1) ilk siradakini isaretler (3) dersek ucuncu sıradakini (odd) dersek bi etkiler bi es gecer */
