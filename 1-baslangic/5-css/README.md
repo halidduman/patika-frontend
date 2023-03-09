@@ -1,4 +1,6 @@
 # CSS
+
+
 Css kullanırken unutmamamız gereken isaretlerden biri ";"'dir. bu fazladan ozellik eklemek istedigimiz zaman kullanicagimiz bir isaret
 
 peki biz < h1 > kodumuza ozellik eklemek istersek su sekilde yapabiliriz.
@@ -18,7 +20,7 @@ diyebiliriz
 diye yazabaliriz.
 --
 
-# Inline(Etikete Özel), Internal(Aynı Dosyada) ve External(CSS Dosyasında) CSS Kullanımı
+## Inline(Etikete Özel), Internal(Aynı Dosyada) ve External(CSS Dosyasında) CSS Kullanımı
 uc cesid css kullanımı vardir
 --
 - Inline css= etiket icinde style kullanımı.
@@ -72,16 +74,16 @@ body {
     background-color: rgb(199, 199, 199);
 }
 ```
-# miras sistemi
+## miras sistemi
 NOT:  mesela bir < ul> etiketinin rengini deistirirsek ve < ul > etiketinin icinde < li > etiketleri varsa bu < li > etiketleride etkilenip renkleri degisecektir.
 --
 ----
 
-# Genel Font Özellikleri
+## Genel Font Özellikleri
 
     fontu indirmeden kullanmak icin:
     index dosyasindaki < head > kısmını icine < link rel= href= > kısmına ekleyip,kısa linki css dosyamıza veya < body >kısmına < font-family > olarak ekliyoruz.
-# CSS ile Class ve ID Kullanımı
+## CSS ile Class ve ID Kullanımı
 + class
     class: kullanmadan once css dosyanizi html dosyaniza tanimlayin ardindan css dosyaniza class etiketini tanimlamak icin basina "." koyun
     -
