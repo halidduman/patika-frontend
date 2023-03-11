@@ -1,0 +1,91 @@
+/* ana kutu */
+body > .container {
+  height: 286.6px;
+  width: 100%;
+  text-align: center;
+}
+
+/* google gorsel resmi ************************************************************************************/
+.gorsel {
+  width: 400px;
+}
+
+/* green-box & ust kutu *************************************************************************************/
+.box1 {
+  height: 45%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* blue-box & alt kutu *************************************************************************************/
+.box2 {
+  height: 50%;
+  margin-top: 5px;
+}
+
+/* beyaz kutu ust *****************************/
+.boxbox1 {
+  height: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  padding-top: 1px;
+}
+
+/* sarı kutu alt *****************************/
+.boxbox2 {
+  height: 48%;
+  margin-top: 2px;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* padding-left: 10px; */
+}
+
+/* sarı kutu icindeki mavi kutu 1 */
+.boxx1 {
+  width: 42.1%;
+  height: 80px;
+  float: left;
+  margin-right: 2px;
+}
+
+/* sarı kutu icindeki mavi kutu 2 */
+.boxx2 {
+  width: 13.6%;
+  height: 80px;
+  float: left;
+  margin-left: 0px;
+}
+
+/* sarı kutu icindeki mavi kutu 3 */
+.boxx3 {
+  width: 44%;
+  height: 80px;
+  float: right;
+}
+
+/****************** arka plan renkleri icin ****************/
+
+.bg-black {
+  background-color: #eeeeee;
+}
+
+/* .bg-red {
+  background-color: red;
+} */
+
+/* .bg-green {
+  background-color: green;
+} */
+
+/* .bg-blue {
+  background-color: blue;
+} */
+
+/* .bg-yellow {
+  background-color: yellow;
+} */
+
+/* .bg-turkuaz {
+  background-color: rgb(0, 98, 147);
+} */
