@@ -28,59 +28,59 @@
 
 ---
 
-İçerik alanı(ortadaki gönderilerin olduğu alan) offset 4 olmalı ve üstten 2 birim margin almalı.
+<!-- İçerik alanı(ortadaki gönderilerin olduğu alan) offset 4 olmalı ve üstten 2 birim margin almalı. -->
 
 ---
 
-Class'da belirttiğimiz middlearea içinde maksimum yükseklik 200px olmalı ve bunu important ile yazmalısınız. (important'ın ne olduğunu, ne işe yaradığını henüz bilmiyorsanız bir "Css important nedir?" şeklinde aramanızı ve ne işe yaradığını öğrenmenizi öneririz. Unutmayın parametre vermek bazen istemediğiniz durumlara yol açabilir bilinçli kullanmak gerekir.)
+<!-- Class'da belirttiğimiz middlearea içinde maksimum yükseklik 200px olmalı ve bunu important ile yazmalısınız. (important'ın ne olduğunu, ne işe yaradığını henüz bilmiyorsanız bir "Css important nedir?" şeklinde aramanızı ve ne işe yaradığını öğrenmenizi öneririz. Unutmayın parametre vermek bazen istemediğiniz durumlara yol açabilir bilinçli kullanmak gerekir.) -->
 
 ---
 
-Bu alanın col'unun default değerini 12, diğer tüm ölçekleri ise 6 olarak ayarlayın. Yani normal boyutta 12, sayfa küçülüp büyüdükçe, boyutuyla oynadıkça 6 ölçek olacak şekilde ayarlayın. (Grid sistemin 12'lik olduğunu hatırlayın)
+<!-- Bu alanın col'unun default değerini 12, diğer tüm ölçekleri ise 6 olarak ayarlayın. Yani normal boyutta 12, sayfa küçülüp büyüdükçe, boyutuyla oynadıkça 6 ölçek olacak şekilde ayarlayın. (Grid sistemin 12'lik olduğunu hatırlayın) -->
 
 
 ---
-
-Hikayeler kısmında isimler nasıl resimlerin altına gelecek? (İpucu: Arama kısmında kullandığımız özellik)
-
----
-
-İçerik kısmında üç nokta sağda olmalı.
+********************************
+<!-- Hikayeler kısmında isimler nasıl resimlerin altına gelecek? (İpucu: Arama kısmında kullandığımız özellik) -->
 
 ---
 
-Beğenme, yorum yapma, paylaşma kısmında border olmamalı.
-
+<!-- İçerik kısmında üç nokta sağda olmalı. -->
 
 ---
 
-Bookmark ikonunun offset'i 7 birim olmalı.
+<!-- Beğenme, yorum yapma, paylaşma kısmında border olmamalı. -->
 
 
 ---
 
-Card header ve card footer'lar beyaz renk olmalı.
-
----
-
-Yorum paylaş metnini sağa alın.
+<!-- Bookmark ikonunun offset'i 7 birim olmalı. -->
 
 
 ---
 
-Sağ panele verilen alan sizce yeterli mi? Değilse düzeltin.
+<!-- Card header ve card footer'lar beyaz renk olmalı. -->
 
 ---
 
-Sağ panel için stickysidebar ve rightpanel diye iki class verdiğimizi fark etmişsiniz. Stickysidebar bu panelin sayfayı aşağı kaydırdıkça onun da gelmesini sağlıyor. Bunu sağlamak için için CSS'in position property'sini kullanabilirsiniz. Rightpanel'de de arkaplan rengi beyaz olup kenarlık olmamalı.
-
-
----
-
-Tümünü gör ve takip et yazılarını sağa alınız.
+<!-- Yorum paylaş metnini sağa alın. -->
 
 
 ---
 
+<!-- Sağ panele verilen alan sizce yeterli mi? Değilse düzeltin. -->
 
-Bütün sayfanın arkaplan rengini Instagram'dan alıp uygulayın.
+---
+
+<!-- Sağ panel için stickysidebar ve rightpanel diye iki class verdiğimizi fark etmişsiniz. Stickysidebar bu panelin sayfayı aşağı kaydırdıkça onun da gelmesini sağlıyor. Bunu sağlamak için için CSS'in position property'sini kullanabilirsiniz. Rightpanel'de de arkaplan rengi beyaz olup kenarlık olmamalı. -->
+
+
+---
+
+<!-- Tümünü gör ve takip et yazılarını sağa alınız. -->
+
+
+---
+
+
+<!-- Bütün sayfanın arkaplan rengini Instagram'dan alıp uygulayın. -->
