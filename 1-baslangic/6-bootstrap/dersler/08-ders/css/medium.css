@@ -9,3 +9,8 @@ font-family: 'PT Serif', serif;
 .border-bottom-dark {
     border-bottom: 1px solid rgb(41, 41, 41);
 }
+
+.asaide-buttons > li {
+    margin-bottom: 10px;
+
+}
