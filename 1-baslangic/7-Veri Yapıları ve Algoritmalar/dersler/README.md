@@ -25,3 +25,30 @@
 <img src=images/linked-list.png alt=gorsel>
 
 - Yukarıdaki örnekte gördüğünüz üzere, her bir düğüm bir sonrakinin adresini tutar. Her bir önceki eleman bir sonraki eleman ile bağlıdır.
+
+## Linked List vs Array
+
+<img src=images/2.png alt=gorsel>
+
+<img src=images/3.png alt=gorsel>
+
+## Linked List Eleman Ekleme/Silme
+Gelin 3 elemanlı bir hücre oluşturalım.
+
+<img src=images/4.png alt=gorsel>
+
+### Eleman Ekleme
+
+- Adresi #12 olan 22 sayısını listeye eklemek istiyoruz. Yapmamız gereken 6 hücresine 22 sayısının adresini yazmak.
+<img src=images/6.png alt=gorsel>
+
+### Eleman Çıkarma
+- Adresi #20 olan 6 numaralı hücresini çıkarmak istiyoruz. Linked-List'de bir önceki eleman adresini tutuyordu. Yani 7 numaralı hücrede bulunan 6'nın hücre adresini siliyoruz. Yerine 22 numaralı hücrenin adresini yazıyoruz
+<img src=images/7.png alt=gorsel>
+
+## Stack
+
+- Stack, LIFO (Last in First out) (En son giren en önce çıkar) mantığına dayanan, elemanlar topluluğundan oluşan bir yapıdır. Gelin hemen örneğimize geçelim. Taşınırken topladığınız koli kutusu düşünün. İçerisinde kitaplar var ve en, boy olarak koliye tam olarak koyuluyor. Mantıken kolinin altı kapalı ve üst üste koymanız gerekmektedir. Yeni taşındığınız yerde çıkartırken en üstekinden başlarsınız. İşte stack (Yığın) da aynı mantıkta çalışıyor.
+
+- Yığınlara eleman eklerken veya çıkartırken bazı methodlar uygulanır. Bunlardan biri push, diğeri ise pop. Push, yığının üzerine eleman eklemek için kullanılır (Koliye kitap koymak). Pop ise, yığından eleman çıkarmak için kullanılır.
+- <img src=images/8.png alt=gorsel>
