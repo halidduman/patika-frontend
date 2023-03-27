@@ -50,4 +50,4 @@ console.log(fullName)
 const SERVER_PASSWORD ="şasşldasld"
 console.log(SERVER_PASSWORD)
 SERVER_PASSWORD = "12345"
-console.log(SERVER_PASSWORD)
+console.log(SERVER_PASSWORD)    
