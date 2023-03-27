@@ -79,3 +79,75 @@ En çok kullanılan JavaScript oyun teknolojileri aşağıdaki görselde yer alm
 En çok kullanılan JavaScript Makine Öğrenmesi, Derin Öğrenme ve Yapay Zeka teknolojileri aşağıdaki görselde yer almaktadır. Bunlar soldan sağa doğru; ml5.js, Brain.js, TensorFlow.js, ConvNetJS ve Synaptic.js'tir.
 
 <img src=images/8.jpg alt=gorsel>
+
+---
+---
+## Birçok Platformda Hello World ve Hello World'ün Önemi
+
+Merhaba arkadaşlar bugün size daha önceden illaki bir kez de olsa karşılaştığınız "Hello world"ün ne olduğunu, önemini anlatmak istiyorum. "Hello world" aslında programlamanın girişi olarak kabul edilir. Çünkü bir kişi kodlamaya ekrana ilk "Hello world" yazısını yazdırarak başlamaktadır. Aslında bu yazı programın hatasız bir şekilde çalıştığını test etmek amaçlı yazdırılmaktadır. Bu yazıyı sorunsuz bir şekilde çalıştırabilirsek, artık programlama kısmına hatasız bir şekilde devam edebiliriz anlamına gelmektedir.
+
+Javascript'te bunu yapmanın birçok yolu vardır:
+
+- Browser üzerinde ekrana alert şeklinde hello world yazdırmak.
+- console da hello world yazdırmak.
+- Browser üzerinde console'u kullanarak hello world yazdırmak.
+
+---
+
+## Değişken Tanımlama: var, ES6 ile Birlikte Gelen let ve const Değişken Tanımlama Yapısının Kullanımı, var ile Arasındaki Farklar
+
+Değişkenler en basit tabirle değerleri hafızada tutmak için kullanılan yapılardır. Bir tanımlayıcı ile tanımlanır. Tanımlayıcı öncesi var, let veya const deklarasyonlarından biri kullanılarak deklare edilir. Değişken isimlendirmede dikkat etmemiz gerekenler şunlardır.
+
+- Değişken isimleri harf, _ veya $ işareti ile başlayabilir. Fakat ES5 (ECMAScript 5) birlikte gelen özellikle UNICODE kodları kullanılırken kaçış karakteri olarak kullanılan \ işareti ilk karakter olarak kullanılabilir.
+  
+- İlk harften sonra değişken isimlerinde rakamlar da kullanılabilir. $ ve _ dışında başka noktalama işaretleri kullanılamaz
+  
+- Değişken ismindeki harfler arasında boşluk kullanılamaz.
+
+### Değişkene Değer Atama ve Veri Türleri
+Değişkenlere değer atama = operatörü ile yapılır.
+
+Şeklinde bir değişken tanımladığımızda okulNumarasi değişkenine sayısal bir değer olan 12 değeri atanır.
+
+Yukarıda kod parçasında görüldüğü gibi ilk olarak değişken tanımlaması yapılıp, değer ataması daha sonra yapılabilir. Değişkenler değer atanmadığı takdirde undefined değerini alırlar.
+
+Yukarıdaki kod parçasında olduğu gibi tek bir satırda, deklarasyonları aynı fakat farklı tanımlayıcılar ile tanımlamış değişkenler tek bir satırda tanımlanabilir ve değer atanabilir.
+
+JavaScript loosely typed bir programlama dilidir. Yani bir değişkeni tanımlarken değişkenin türünü (sayısal, metinsel, boolean) belirtmemize gerek yoktur.
+
+Yazdığımız zaman 12 değerinin sayısal bir değer olduğunu anlar. Bir değişkene aşağıdaki veri tiplerini atayabiliriz.
+
+- Boolean = Mantıksal ifadedir. true veya false değeri atanabilir
+  
+- Number = Sayısal ifadedir. 2^53 -1 değerine kadar sayısal değerler atanabilir.
+
+- BigInt = 2^53-1 değerinden büyük değerleri atayabilir.
+
+- String = Metinsel ifadelerdir. Metinsel ifade tanımlanırken ifade “ ” veya ‘ ’ işaretleri arasına yazılır.
+
+- Object = Yukarıda ki 7 veri türü de primitive tiplidir. Objelerde ( nesne, dizi ) gibi referans tipler de değişkenlere atanabilir.
+
+### var
+
+Global scope veya function scope'ta deklarasyon sağlayamaya yarayan keyword'dur. Scope özelliklerini daha sonra örneklerle açıklayacağız. var ile tanımlanan değişkenlerin özellikleri şunlardır.
+
+- Değişken değerleri değiştirilebilir.
+
+- Aynı isimle tekrardan tanımlanabilirler.
+
+- var ile tanımlanan değişkenler global scope veya function scope'tur. Global scope'ta tanımlanan değişkenlere her yerden ulaşılabilir. Function içerisinde tanımlanan değişkenlere ise tanımlı olduğu fonksiyonda ulaşılabilir. Bu konuyu örneklerle açıklayalım.
+
+Değişkenleri block scope'ta tanımlayan deklarasyondur. let ile tanımlanan değişkenlerin özellikleri şunlardır.
+
+Değişken değerleri değiştirilebilir.
+
+
+- Aynı isimle tekrardan aynı blokta tanımlanamaz. Farklı 
+
+- block'larda aynı isimle tanımlanabilir.
+
+### const
+
+Block scope da tanımlı, değeri sonradan değiştirilemez değişkenleri deklare etmek için kullanılan keyword'dür.
+
+- Const ile tanımlanan objelerin özellikleri (properties) değiştirilebilir fakat objenin kendisi değiştirilemez. Diziler içinde aynısı geçerlidir. Dizi değerleri değiştirilebilir fakat dizinin kendisi değiştirilemez.
