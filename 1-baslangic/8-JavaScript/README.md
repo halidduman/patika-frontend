@@ -375,3 +375,308 @@ console.log([1]+[1,2,3])
 [ 1 ].toString(); // sonuç "1" verir
 [ 1,2,3 ].toString() // sonuç "1,2,3" verir. Bu durumda iki string ifadenin toplanmasından çıkan sonuç "1" + "1,2,3" --> "11,2,3" olacaktır.
 ``````
+---
+## Template Literals Kullanımı
+
+Template Literals (önceki adıyla Template Strings), kod okunabilirliği ve yazım kolaylığı sağlayan ES6 ile gelmiş bir string yazma şeklidir.
+
+### Kullanım Şekli
+````
+"Eski string"
+
+`Bu bir yeni string örneğidir.`
+````
+String ifade yazarken, " veya ' kullanırız. Template Literals ile JavaScript'te backtick (```) işareti kullanılmaya başlanmıştır.
+
+### Sağladığı Faydalar
+- Çok Satırlı Dize Yazımı:
+````
+//Eski kullanım:
+let eskiString = "En sevdiğim yemekler:\nİskender\nMantı"
+
+//Yeni kullanım:
+let yeniString = `En sevdiğim yemekler:
+İskender
+Mantı`
+````
+- İnterpolasyon:
+
+İnterpolasyon, metin içerisinde değişken kullanmak anlamına gelir. Normal dizeler içerisine ifadeler gömmek için kullanılır.
+````
+let ad= `Aycan`;
+let soyad= `Yerdelen`;
+
+//Eski kullanım
+console.log("Benim adım "+ad+" "+ soyad);
+
+//Yeni kullanım
+console.log(`Benim adım ${ad} ${soyad}`);
+````
+ Örnek:
+````
+let a = 99;
+let b= 999;
+
+console.log(`${a} çarpı ${b} eşittir ${a*b}`);
+
+//Çıktı: 
+//99 çarpı 999 eşittir 98901
+````
+- HTML Şablonları
+
+Çok satırlı dizeleri kolaylıkla kullanmak ve dizelerimize içerik eklemek için de Template Literal’den faydalanabiliriz.
+````
+//Değişkenlerimizi tanımlayalım
+const ad =`Aycan`
+const soyad =`Yerdelen`
+const gozRengi =`Kahverengi`
+const yas =21
+````
+→ Eski kullanım, Template Literals kullanmadan:
+`````
+const kisi = "<p>"+ad+"</p>"+
+              "<p>"+soyad+"</p>"+
+              "<p>"+gozRengi+"</p>"+
+              "<p>"+yas+"</p>"
+
+document.body.innerHTML = kisi;
+````````
+→Yeni kullanım, Template Literals kullanarak:
+`````
+const kisi = `
+<p>${ad}</>
+<p>${soyad}</>
+<p>${gozRengi}</>
+<p>${yas}</>
+`;
+
+document.body.innerHTML = kisi;
+
+//Bu kullanım daha az karmaşık ve okunabilir.
+``````
+### Kısaca
+
+Template Literals;
+
+- Kod okunabilirliğini kolaylaştırır,
+- Stringler içerisinde değişken yazma kolaylığını sağlar,
+- Şablon etiketlerini daha az karmaşık hale getirir.
+
+### Alıştırma
+- Aşağıdaki kod satırlarını Template Strings yazımına göre düzenleyiniz.
+````
+const kitap = {
+  ad: "Fırtına",
+  yazar: "Shakespeare",
+  tarih: 1610
+}
+const bookTable =
+      "<table border>"+
+  "<tbody>"+
+    "<tr>"+
+      "<td>"+"Kitap"+"</td>"+
+      "<td>"+kitap.ad+"</td>"+
+    "</tr>"+
+  "<tr>"+
+      "<td>"+"Yazar"+"</td>"+
+      "<td>"+kitap.yazar+"</td>"+
+    "</tr>"+
+      "<tr>"+
+      "<td>"+"Tarih"+"</td>"+
+      "<td>"+kitap.tarih+"</td>"+
+    "</tr>"+
+ " </tbody>"+
+"</table>"
+document.body.innerHTML = bookTable
+````
+----
+## String Veri Türü İşlemleri
+### String nedir?
+JavaScript metinlerin tümü "string" veri tipi içinde tutulur ve "string" veri türü ile ilgili yapabileceğimiz birden fazla işlem vardır. Bu yazımızda bunlardan bahsedeceğiz.
+
+### Length Özelliği - Uzunluk Değerini Alma
+String veri tipinde bulunan bir ifadenin ne kadar uzun olduğunu bulmak için Length özelliğimizi kullanırız.
+
+<img src=images/9.png alt=gorsel>
+<img src=images/10.png alt=gorsel>
+
+### indexOf - Metin İçinde Arama Yapma
+Metnin içinde aramak istediğimiz değerin index numarasını bize verir.
+<img src=images/11.png alt=gorsel>
+<img src=images/12.png alt=gorsel>
+
+### lastIndexO f- Metin İçinde Arama Yapma
+
+indexOf ile arasındaki tek fark aranan kelime birden fazla geçiyor ise en son eşleşmeden gelen index numarasını döndürür.
+
+<img src=images/13.png alt=gorsel>
+<img src=images/14.png alt=gorsel>
+
+### Search - Metin İçinde Arama Yapma
+indexOf ile aynı sonuçlara ulaşırız genel olarak "Regular Expressions" işlemleri için çok kullanılan bir metottur.
+
+<img src=images/15.png alt=gorsel>
+<img src=images/16.png alt=gorsel>
+
+### Slice - Metninden Parça Almak
+
+Metin içinden almak istediğimiz yerlerin index numaralarını vererek metin içinde bulunan parçayı alabiliriz.
+
+<img src=images/17.png alt=gorsel>
+
+Bitiş index numarasındaki karakter sonuca dahil edilmez.
+
+<img src=images/18.png alt=gorsel>
+
+Not: Tek index yazmak ise yazılan index numarasından sonra gelen tüm karakterleri almasına neden olur.
+
+<img src=images/19.png alt=gorsel>
+<img src=images/20.png alt=gorsel>
+
+### Replace – Metin Bulma ve Değiştirme
+Aranan metni istediğimiz metin ile değiştirmemize olanak sağlar.
+
+<img src=images/21.png alt=gorsel>
+<img src=images/22.png alt=gorsel>
+
+toUpperCase ve toLowerCase
+
+<img src=images/23.png alt=gorsel>
+
+toUpperCase metin içinde bulunan tüm karakterleri büyük harf yapmamıza olanak sağlar.
+
+toLowerCase metin içinde bulunan tüm karakterleri küçük harf yapmamıza olanak sağlar.
+
+<img src=images/24.png alt=gorsel>
+
+### Concat - Metin Birleştirme
+Elimizde bulunan iki string türündeki veriyi birleştirmemize olanak sağlar.
+
+<img src=images/25.png alt=gorsel>
+<img src=images/26.png alt=gorsel>
+
+### charAt- İndex Numarasına Göre Karakter Bulmak
+Belirtilen index numarasında yer alan karakteri verir.
+
+<img src=images/27.png alt=gorsel>
+<img src=images/28.png alt=gorsel>
+
+### charCodeAt – İndex Numarasına Göre Karakterin Unicode Değerini Bulma
+Belirtilen index numarasında yer alan karakterin Unicode değerini verir.
+<img src=images/29.png alt=gorsel>
+<img src=images/30.png alt=gorsel>
+
+### Split – Metni Diziye Çevirme
+Split metodu ile istenilen metin diziye çevrilebilir. Kullanılan parametre ile metnin nasıl parçalanacağı belirtilir.
+
+<img src=images/31.png alt=gorsel>
+<img src=images/32.png alt=gorsel>
+
+Bir String ifadesi içerisinde yer alan bilgilerin istediğimiz gibi olup olmadığını kontrol etmek isteyebiliriz. İçerisinde mail adresi geçiyor mu? Kullanıcın verilerinde benim aradığım bilgi var mı? Gibi kontroller yapmak istiyor olabiliriz. String veri türü işlemleri bize bu noktada yardımcı olur.
+
+### Örnekler üzerinden görelim:
+
+````
+let email = "kodluyoruz@kodluyoruz.org"
+let firstName = "JavaScript"
+let lastName = "BOOTCAMP"
+````
+Bu değişkenleri yazı boyunca kullanacağız.
+
+### Karakter Sayısı
+String bir ifadenin karakter sayısını (uzunluğunu) bulmak istiyorsak length özelliğini kullanırız.
+````
+console.log(email.length);  //25
+console.log(firstName.length); //10
+````
+###Karakter Yeri (Index)
+String bir ifadenin içerisinde, aradığımız karakterin yerini bulmak için 2 yöntem vardır. [ ] ve chartAt() metodu bize bu konuda yardımcı olur.
+````
+console.log(firstName.[0]); //"J"
+console.log(firstName.charAt(2)); //"v"
+````
+### Büyük/Küçük Harfe Çevirme
+
+String bir ifadeyi tamamen büyük veya küçük harf yapmak istiyorsak. Büyük harf için toUpperCase(), küçük harf için ise toLowerCase() metotlarını kullanırız.
+````
+firstName = firstName.toUpperCase();
+console.log(firstName); //"JAVASCRIPT"
+
+lastName = lastName.toLowerCase();
+console.log(lastName); //"bootcamp"
+````
+### İlk Harfi Büyük Kalan Harfleri Küçük Yapma
+
+En başta değişkenlerimizi tanımlardan lastName değişkenimizi "BOOTCAMP" olarak sadece büyük harf ile yazdık. Bu ifademizi "Bootcamp" değiştirmek isteyebiliriz. Ya da sadece küçük harfler ile yazılmış bir özel ismin ilk harfini, büyük harf yapmak istiyor olabiliriz.
+
+Bu tür durumları şu şekilde sağlarız.
+````
+lastName = `${lastName[0].toUpperCase()}${lastName.slice(1).toLowerCase()}` //Bootcamp
+````
+### İstediğimiz Bilgiyi Aramak
+
+String bir ifade içerisinde, istediğimiz bir bilginin yerini bulmak için search() metodunu kullanırız. Kontrol ettiğimiz ifade nereden başlıyor ise bize onun yerini verir.
+
+````
+console.log(email.search("@")); //10
+````
+Eğer arattığımız şey yok ise -1 sonucu verir.
+`````
+console.log(email.search("olmayan")); //-1
+````````
+search() yerine kullanabileceğimiz başka bir metot ise indexOf() metodudur.
+`````
+console.log(email.indexOf(".")); //21
+```````
+
+### Belli Bir Bilgiyi Almak
+
+Biraz önce search() metoduyla @ işaretinin nerede olduğunu almıştık. İşte bu noktada @ işaretinden sonra gelen domain bilgisini almak bizim için çok kolay bir hale geldi, slice() metoduyla bu işlemi gerçekleştirebiliriz.
+
+````
+console.log(email.slice(10+1)); //"@kodluyoruz.org"
+//@ ifadesini almak istemediğimiz için +1 kullandık.
+`````
+Başka bir kullanımı ise şu şekildedir.
+````
+console.log(firstName.slice(1,4)); //"ava"
+````
+Yukarıdaki ifadede 1'inci index'ten başla ve 4. index'e kadar olan yeri al dedik. Bu noktada şunu anlamak önemli, 1. index'ten başlayıp 4. index'e kadar gittiğimiz için sadece 3 karakter aldı.
+
+email değişkeninde sadece domaini almak istesek bunu iki farklı yöntemle yapabiliriz.
+
+`````
+let domain = email.slice(email.search("@")+1); 
+console.log(domain); //"kodluyoruz.org"
+
+let domain = email.slice(email.indexOf("@")+1); 
+console.log(domain); //"kodluyoruz.org"
+``````
+### Bilgiyi Değiştirmek
+
+email değişkeninde domaini değiştirmek istersek eğer, replace() metodu bize yardımcı olur.
+
+`````
+email = email.replace("kodluyoruz.org", "gmail.com");
+console.log(email); //"kodluyoruz@gmail.com"
+`````
+### İstediğim Bilgi Var Mı?
+
+Aradığımız bilginin değişken içerisinde olup olmadığını kontrol etmek için includes() metodunu kullanırız. true veya false döner.
+`````
+email.includes("@"); //true
+email.includes("$"); //false
+`````
+### Nasıl Başladı Nasıl Bitti?
+
+Aldığımız veri istediğimiz bilgiyle başladı mı? Veya istediğimiz bilgiyle bitti mi? Bu durumu kontrol etmek için startsWith() ve endsWith() metodunu kullanırız.
+````
+email.startsWith("@"); //false
+email.endsWith("org"); //true
+`````
+### Sorular
+`````
+let url = "www.kodluyoruz.org";
+let language = "Java";
+``````
+
