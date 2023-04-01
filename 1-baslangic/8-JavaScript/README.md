@@ -767,3 +767,225 @@ Sonrasında oluşturduğumuz inputs değişkenine Console üzerinden ulaşabilir
 <img src=images/33.png src=gorsel>
 
 ----
+## Prompt ile Kullanıcıdan Nasıl Bilgi Alınır?
+Javascript kullanıcı ile iletişim kurmamızı sağlayabilen etkileşimli bir dildir ve biliyoruz ki kullanıcı ile etkileşimi sağlamının bir yolu kullanıcıdan bilgi istemektir.
+
+Javascript ile ilgilenenler, Javascript'te prompt komutu ile sağlarlar.
+
+Şimdi birlikte kullanıcıdan istenilen kelimeyi sayfaya nasıl yazdıracağımıza bakalım...
+
+Öncelikle bir fonksiyon belirleriz bu fonksiyon içerisinde prompt ile kullanıcıdan bilgi ister document.write ile de sayfamıza yazdırırız. Özelikle bunları aynı fonksiyon içerisinde yazıyoruz ki sayfamız açıldığında ilk olarak fonksiyonumuz yüklensin ve belirtilen uygulamalar yorumlanıp sırası ile sayfamızda gösterilsin.
+
+- <  script  > tag'leri arasında veya .js dosyamıza yazacağımız fonksiyonumuza geçelim.
+
+Fonksiyonumuzun ismi istek olsun, function istek();
+
+````
+function istek()
+{
+  var kelime=prompt("Bir değer giriniz","lütfen sadece kelime giriniz..")
+  document.write(kelime)
+}
+`````
+### Prompt Kullanışına geçelim
+var a=prompt(Bir değer giriniz","lütfen sadece kelime giriniz..")
+
+Yukarıdaki gibidir. var a=prompt diyerek girilecek değere a değişkenini atıyoruz ki daha sonra sayfamızda yazdırılmak üzere lazım olacak.
+
+Prompt'ta ilk olarak yazılan;
+- "Bir değer giriniz" = Kullanıcıya yönetilen bilgi girişinin başlığının soru halidir.
+  
+  Prompt'ta ikinci olarak yazılan;
+
+- "lütfen sadece kelime giriniz.." = Text(input) içerisinde gösterilecek uyarıdır. Boş da bırakılabilir.
+
+Evet, Prompt komutunu da kavradık. Şimdi iki işlemimiz kaldı.
+
+1. Kullanıcı tarafından girilen kelimenin sayfada gösterimi.
+   
+2. Fonksiyonun sayfamız açıldığında çağırılması.
+
+3. document.write komutu bulunan sayfa içerisinde istenileni yazdırmak için kullanılır. Biliyoruz ki değişken yazdırmak istenildiğinde " kullanmıyoruz.
+````
+document.write(a)
+`````
+2.Sayfamız açıldığında fonksiyonun yüklenmesi için body içerisine onload komutu ile fonksiyonumuzu çağıralım.
+`````
+<body onload="mesaj()">
+</body>
+`````
+Evet, işte bu kadar. Şimdi alıştırmalara geçelim!
+### Prompt ile Kullanıcıdan Bilgi Almak
+Prompt() kullanıcıya soru sorup klavyeden girilen bilgiyle işlem yapan, o bilgiyi döndüren bir window metodudur. alert() gibi Html üzerinde, HTML sayfasından bağımsız çalışır ve karşımıza diyalog penceresi şeklinde çıkar.
+
+### Prompt() Kullanımı:
+
+`````
+//prompt("Sorulacak olan soru", "kutunun içerisi")
+prompt("Boyunuzu giriniz", "Örnek: 166 cm");
+
+//Örnek kısmı diyalog kutusunun içerisinde gözükecektir
+`````
+Bu metotla birlikte ekranda "Boyunuzu giriniz" yazısı ve altında da diyalog kutusu belirecektir. Bu diyalog kutusunda da "örnek: 166" yazacaktır fakat zorunlu bir kullanım değildir ve genel olarak kullanıcıya rehberlik etmek için kullanılır.
+
+Burada prompt() yapısını bir değişken içine atmadığımız için istenilen girdiyi girip Tamam tuşuna bassak bile bize bir işlem dönmeyecektir ya da hafızasında girilen bilgiyi tutmayacaktır. Eğer prompt() metodumuzu bir değişken içine atarsak, vereceğimiz cevap o değişkenin bir değeri haline gelir.
+`````
+var isim = prompt("Adınız nedir?");
+console.log("Merhaba, " + isim);
+
+//Çıktı:
+//Merhaba, yazdığınız Ad
+```````
+Artık prompt() komutumuz bir değişken içinde olduğu için console.log() içerisine değişken adımızı yazarak konsol ekranında görebildik. Böylelikle normal bir değişkenle yapabildiğimiz her şeyi artık bu tanımlı değişkenle de yapabiliriz.
+
+Prompt Mantığı
+Kullanıcı Tamam düğmesini tıkladığında, giriş alanına girilen metin döndürülür. Kullanıcı herhangi bir metin girmeden Tamam'ı tıklarsa, boş bir dize döndürülür. Kullanıcı İptal düğmesini tıklarsa, bu işlev boş döndürür.
+
+----
+ClassList
+
+JavaScrip’te CSS class'larını manipüle etmenin en iyi yollarından biri classList kullanmaktır. classList bir öğenin sınıf isimlerini DOMTokenList olarak döndürür. classList özelliği tüm modern browserlarda çalışır.
+
+### Syntax
+````
+const elementClasses = elementNodeReference.classList;
+```````
+- add() : HTML öğesine bir veya daha fazla class ekler.
+`````
+let div = document.querySelector('#content');
+div.classList.add('info');
+```````
+Yukarıda content id'li ögeyi seçtik ve ona info class'ını ekledik.
+``````
+let div = document.querySelector('#content');
+div.classList.add('info','visible','block');
+```````
+Tek seferde birden fazla da class ekleyebiliriz.
+
+- remove() : HTML öğesinden bir veya daha fazla class'ı siler.
+`````
+let div = document.querySelector('#content');
+div.classList.remove('info');
+``````
+Yukarıda content id'li ögeyi seçtik ve ona ait info class'ını kaldırdık.
+- item() : HTML de class'ı verilen index sırasına göre döndürür. Eğer index, class length'inden (sayısından) daha büyük veya length'ine eşit olursa undefined döner.
+``````
+let div = document.querySelector('#content');
+div.classList.item(0);
+``````
+
+Yukarıda content id'li ögeyi seçtik ve ona ait ilk class'ı çağırdık.
+
+- contains() : Element verilen class'ı içeriyorsa true, içermiyorsa false döner. Bu sayede bir işlem yaptırmadan önce kontrol edebiliriz.
+
+``````
+let div = document.querySelector('#content');
+div.classList.contains('warning');  
+``````
+- Toggle() : classList.add() ve classList.remove() yöntemini aynı anda çağırmak yerine classList.toggle() yöntemini kullanılabilir.
+
+Bu metodu kullanmadan önce contains() metodu ile sınıfın var olup olmadığını manuel olarak kontrol etmek gerekir.
+
+``````
+let div = document.querySelector('#content');
+div.classList.toggle('visible');
+``````
+- replace() : Bir CSS sınıfını başka bir sınıfla değiştirmek için kullanılır.
+  
+``````
+let div = document.querySelector('#content');
+div.classList.replace('info','block');
+``````
+- length() : Bir öğede bulunan sınıf sayısını bilmemizi sağlar.
+
+-----
+## Karşılaştırma Operatörleri ve Mantıksal Operatörler
+## Karşılaştırma Operatörleri
+
+Karşılaştırma operatörleri, değişkenler veya değerler arasındaki eşitlik ve farkı bulmak için kullanılır. Bu iki değerin karşılaştırmasını yaparak true (doğru) veya false (yanlış) sonucu verir.
+
+## == Eşitse
+`````
+var a = 10;
+var b = "10";
+console.log(a==b)  "Ekranda çıkan sonuç = true"
+```````
+a ve b değeri birbirine eşit olduğu için sonuç true olacaktır.
+
+## === Hem değeri hem de türü eşitse
+``````
+var a = 10;
+var b = "10";
+console.log(a===b)  "Ekranda çıkan sonuç = false"
+```````
+a ve b değeri arasında üç tane eşittir olmasından ötürü burada hem değerin hem de türün eşit olup olmadığı kontrol edilecektir. a ve b değişkenin değeri aynı olmasına karşın türleri farklı olduğu için sonuç false olacaktır.
+
+## != Eşit değilse
+``````
+var a = 10;
+var b = "10";
+console.log(a!=b)   "Ekranda çıkan sonuç = false"
+console.log(a!==b)  "Ekranda çıkan sonuç = true"
+
+var c= "kodluyoruz"
+var d= "javascript"
+console.log(c!=d)  "Ekranda çıkan sonuç = true"
+```````
+a ve b değişkenimiz birbirine eşit değil ise sonucumuz true dönecektir. İlk logumuzda a'nın değeri ile b'nin değeri aynı olduğu için çıkan sonucumuz false olacaktır. İkinci logumuzda ise değerleri aynı olmasına karşın tür kontrolünün yapılıyor olmasından olmasından dolayı değerler eşit olmayacaktır ve true sonucumuz çıkacaktır. Üçüncü eşit değilse karşılaştırma operatöründe ise iki string ifade karşılaştırılmıştır ve içerdeki iki değer birbirinden farklı olduğu için true sonucu dönecektir.
+## < Küçükse
+`````
+var a = 10;
+var b = 10;
+console.log(a<b)  "Ekranda çıkan sonuç = false"
+``````
+a'nın b'den küçük olması durumunda sonucumuz true olacaktır. Fakat yukarıdaki örnekte a değişkeni b'den küçük değildir ve sonucumuz false dönecektir.
+
+## <= Küçük veya eşitse
+`````
+var a = 10;
+var b = 10;
+console.log(a<=b)  "Ekranda çıkan sonuç = true"
+``````
+a'nın b'den küçük olması veya eşit olması durumunda sonucumuz true olacaktır. a değişkeninin değeri ile b değişkeninin değeri eşit olmasından dolayı sonucumuz true dönecektir.
+## > Büyükse ve >= Büyük veya eşitse
+``````
+var a = 20;
+var b = 10;
+console.log(a>b)  "Ekranda çıkan sonuç = true"
+
+var c = 20;
+var d = 20;
+console.log(c>=d)  "Ekranda çıkan sonuç = true"
+``````
+a değerimiz b değerimizden büyük olması durumunda true dönecektir. a ve b değişkenleri kıyaslandığında a'nın daha büyük olmasından dolayı true sonucunu aldık.
+
+c değerimizin d'den büyük veya eşit olması durumunda true, olmaması durumunda ise false sonucu çıkacaktır. a değerimiz b ye eşit olduğu için sonucumuz true olmuştur.
+
+### Mantıksal Operatörler
+JavaScript mantıksal operatörleri kullanarak karşılaştırma işlemini birden fazla koşula göre yapabiliriz. Birden fazla koşulu karşılaştırıp operatörün işlevine göre true (doğru) veya false (yanlış) sonucunu verir.
+
+## && ve
+`````
+var a = 10;
+var b = "kodluyoruz";
+console.log(a>11 && b=="kodluyoruz")  "Ekranda çıkan sonuç = false"
+`````
+a ve b değişkenimiz log'lanırken iki tane koşul yazılmıştır. Birincisi a'nın 11'den büyük olması ve b'nin kodluyoruz'a eşit olması ifadesidir. && (ve) mantıksal operatörümüz içeride bulunan iki koşulunda sağlanması durumda true sonucunu verecektir. Örneğimize baktığımızda b kodluyoruz'a eşit olmasına karşın a değerimiz 11'den büyük değildir ve sonucumuz false dönecektir.
+
+## || veya
+``````
+var a = 10;
+var b = "kodluyoruz";
+console.log(a>11 || b=="kodluyoruz")  "Ekranda çıkan sonuç = true"
+```````
+a ve b değişkenimiz log'lanırken iki tane koşul yazılmıştır. Birincisi a'nın 11'den büyük olması ve b'nin kodluyoruz'a eşit olması ifadesidir. || (veya) mantıksal operatörümüz içeride bulunan iki koşulundan birini sağlanması durumda true sonucunu verecektir. Örneğimize baktığımızda a değerinin 11'den büyük olmamasına rağmen b değeri kodluyoruz'a eşit olduğu için sonucumuz true dönecektir.
+
+## ! değil
+`````
+var a = 10;
+var b = "kodluyoruz";
+console.log(!(a>11 || b="kodluyoruz"))  "Ekranda çıkan sonuç = false"
+`````
+! (değil) mantıksal operatörümüz çalışma mantığı çıkan sonucumuzun tam tersini vermesidir. Yukarıda verdiğimiz örnek ! operatörü olmadan true sonucu döndürecektir fakat ! operatörümüz çıkan true sonucu terse çevirdiği için sonuç false dönecektir.
+
+----
