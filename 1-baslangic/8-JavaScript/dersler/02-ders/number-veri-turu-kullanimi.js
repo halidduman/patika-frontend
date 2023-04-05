@@ -13,13 +13,13 @@ console.log(
   total
 );
 
-let stringNumber = "11"
-console.log(stringNumber)
+let stringNumber = "11";
+console.log(stringNumber);
 
-let newNumber = Number (stringNumber)
-console.log(newNumber)
+let newNumber = Number(stringNumber);
+console.log(newNumber);
 
-console.log("Number Constractor icine bilgi gonderildi:",Number (111))
+console.log("Number Constractor icine bilgi gonderildi:", Number(111));
 
 // arttırma ve azaltma islemi***************************************************************************************//
 

@@ -13,29 +13,26 @@ decreaseDOM.addEventListener("click", clickEvent);
 function clickEvent() {
   console.log(this.id);
 
-  this.id == "increase" ? counter += 1: counter -= 1
-  counterDOM.innerHTML = counter    
-  }
-  
+  this.id == "increase" ? (counter += 1) : (counter -= 1);
+  counterDOM.innerHTML = counter;
+}
 
 /////////////////////////////////////////////////////ilk kod
 // function clickEvent() {
 //     console.log(this.id);
-  
+
 //     if (this.id == "increase") {
 //       counterDOM.innerHTML = counter += 1
 //     }else {
 //       counterDOM.innerHTML = counter -= 1
 //     }
-    
+
 //   }
-  
+
 /////////////////////////////////////////////////////ikinci kod
 // function clickEvent() {
 //     console.log(this.id);
-  
+
 //     this.id == "increase" ? counterDOM.innerHTML = counter += 1 :  counterDOM.innerHTML = counter -= 1
-     
+
 //     }
-    
-  

@@ -1,17 +1,13 @@
 // Fonksiyon Nedir? Neden Kullanırız?
 
-function hello () {
-
-    console.log("merhaba")
-    console.log("helloWorld")
-
+function hello() {
+  console.log("merhaba");
+  console.log("helloWorld");
 }
 
-function helloWorld () {
-
-    console.log("helloWorld")
+function helloWorld() {
+  console.log("helloWorld");
 }
-
 
 ///////////////////////////////////////////////// hata alabiliriz...
 // function userChack () {
@@ -25,7 +21,4 @@ function helloWorld () {
 
 // }
 
-hello ()
-
-
-
+hello();

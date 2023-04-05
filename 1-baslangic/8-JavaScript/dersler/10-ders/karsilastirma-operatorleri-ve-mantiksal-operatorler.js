@@ -35,15 +35,15 @@ console.log(">", price > 10);
 console.log(">=", price >= 10);
 
 // ve (&&)
-price = "0"
-console.log ("&&",price >0 && user != "guest")
+price = "0";
+console.log("&&", price > 0 && user != "guest");
 
 // veya (||)
 
-console.log ("||",price >0 || user != "guest")
+console.log("||", price > 0 || user != "guest");
 
 // degil-tersi (!)
-user = "guest"
-price = 1
+user = "guest";
+price = 1;
 
-console.log ("!",price >0 && !user == "guest")
+console.log("!", price > 0 && !user == "guest");

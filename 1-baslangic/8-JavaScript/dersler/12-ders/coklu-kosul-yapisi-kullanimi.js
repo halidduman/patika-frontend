@@ -1,16 +1,14 @@
 //////////////////////// coklu-kosul-yapisi-kullanimi
 
+let userName = prompt("kullanici adiniz:");
+let age = prompt("yasiniz:");
 
-let userName = prompt("kullanici adiniz:")
-let age = prompt("yasiniz:")
-
-let info = document.querySelector("#info")
-
+let info = document.querySelector("#info");
 
 if (userName && age >= 18) {
-    info.innerHTML = "ehliyet alabilir"
-}else if (!userName) {
-    info.innerHTML = "kullaniciadiniz yok"
+  info.innerHTML = "ehliyet alabilir";
+} else if (!userName) {
+  info.innerHTML = "kullaniciadiniz yok";
 } else if (!(age >= 18)) {
-    info.innerHTML = "yas bilginiz yok veya 18 yasindan kucuksunuz!"
+  info.innerHTML = "yas bilginiz yok veya 18 yasindan kucuksunuz!";
 }
