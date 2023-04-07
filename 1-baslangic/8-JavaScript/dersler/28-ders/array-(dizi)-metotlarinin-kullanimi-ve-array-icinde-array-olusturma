@@ -1,0 +1,51 @@
+////////////////// Array (Dizi) Metotlarının Kullanımı ve Array içinde Array Oluşturma
+
+let items = [1, 2, 3, 4, 5];
+
+// array icinde array
+
+let femaleUsers = ["Ayse", "Hulya", "Merve"];
+let maleUsers = ["Ahmet", "Hasan", "Mehmet"];
+
+items.unshift(femaleUsers);
+
+items.push(maleUsers);
+
+console.log(items[0].length); //array icindeki istedigimiz arrayin bilgisine ulastik
+console.log(items[0][0]); //ayse bilgisine ulastik
+
+//array icersinden oge ayirmak ---> splice (pos, item?)
+
+let newItems = items.splice(2, 5);
+console.log(newItems);
+
+// array icerisindeki ogenin index bilgisini bulmak ---> indexod ("value")
+
+items.unshift("lorem");
+items.push("ipsum");
+console.log(items[items.indexOf("ipsum")]);
+// array kopyalamak --->slice
+let copyItems = items;
+
+copyItems.pop();
+console.log("copyItems", copyItems);
+console.log("items", items);
+
+copyItems = items.slice();
+copyItems.pop();
+console.log("copyItems", copyItems);
+console.log("items", items);
+//es6 ve sonrasinda gelen kopyalama islemi
+let es6Items = [...items];
+//birden fazla itemi birlestime
+
+let allUsers = [...femaleUsers, ...maleUsers];
+
+console.log(allUsers);
+
+//array icerisindeki bilgiyi String'e cevirmek--->toString , join
+console.log(allUsers.toLocaleString())
+console.log(allUsers.join(" --- "))
+//istedigimiz index bilgisine oge eklemek --->splice(index,0,value)
+allUsers.splice(allUsers.length -1, 0,"melissa")
+allUsers.splice(Math.floor(allUsers.length /2), 0,"lorem")
